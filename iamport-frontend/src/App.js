@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import axios from "axios";
 
 function App() {
@@ -29,7 +28,7 @@ function App() {
     const amount = 110;
     const promotion = 10;
     const total_amount = 100;
-    let orderRequest = orderList(merchant_uid, promotion, amount, total_amount);
+    orderList(merchant_uid, promotion, amount, total_amount);
     const name = "5월의신고 세무서비스";
     const pay_method = e.target.getAttribute("pay-method");
     const buyer_email = "owole@gmail.com";
@@ -115,7 +114,6 @@ function App() {
         if (rsp.success) {
           // axios로 HTTP 요청
           console.log("결제 요청 성공, 검증시작");
-          let date = new Date();
           console.log(rsp);
           axios({
             url: "paymentApi/verifyPayment", // 예: https://www.myservice.com/payments/complete
