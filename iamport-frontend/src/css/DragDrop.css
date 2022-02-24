@@ -1,0 +1,40 @@
+.DragDrop {
+  width: 60%;
+  min-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px dashed skyblue;
+  border-radius: 10px;
+  line-height: 100px;
+}
+
+.DragDrop label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.DragDrop label:hover {
+  text-decoration: underline;
+}
+
+.DragDrop-Files {
+  width: 80%;
+  min-height: 0px;
+  margin: 0 auto;
+}
+
+.fileGroup {
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.fileGroup div {
+  min-width: 100px;
+  float: left;
+}
+.DragDrop-Files-Filter {
+  cursor: pointer;
+}
